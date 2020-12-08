@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require("path");
 const { merge } = require('webpack-merge');
@@ -23,9 +22,6 @@ const baseConfig = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, '..', "src", "index.html")
-    })
   ]
 };
 
